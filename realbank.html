@@ -15,24 +15,54 @@
      <!-- now is diposit and withdraw and balence time -->
        <main class=" mx-auto">
            <section class="grid grid-cols-3 ">
-               <div class="bg-blue-200 p-16 mt-8 w-3/4 mx-auto">
+               <div class="bg-blue-200 rounded-3xl p-16 mt-8 w-3/4 mx-auto">
                 <h1 class="text-3xl text-white">Deposit</h1>
-                <h1 class="text-4xl text-white">$ <span>000</span> </h1>
+                <h1 class="text-4xl text-white">$<span id="deposit-amount">000</span> </h1>
                </div>
                <!-- its withdraw time -->
-               <div class="bg-gray-500 p-16 mt-8 w-3/4">
-                   <h1 class="text-3xl text-white">Deposit</h1>
-                   <h1 class="text-4xl text-white">$ <span>000</span> </h1>
+               <div class="bg-gray-500 rounded-3xl p-16 mt-8 w-3/4">
+                   <h1 class="text-3xl text-white">Withdrow</h1>
+                   <h1 class="text-4xl text-white">$<span id="withdraw-box">000</span> </h1>
                </div>
                <!-- its balance time -->
-               <div class="bg-red-100 p-16 mt-8 w-3/4">
-                   <h1 class="text-3xl text-white">Deposit</h1>
-                   <h1 class="text-4xl text-white">$ <span>000</span> </h1>
+               <div class="bg-red-100 rounded-3xl p-16 mt-8 w-3/4">
+                   <h1 class="text-3xl text-white">Balance</h1>
+                   <h1 class="text-4xl text-white">$ <span id="balanced">1890</span> </h1>
                </div>
            </section>
        </main>
+               <!-- deposti section  -->
+       <main class="mx-auto  mt-16 w-3/4 grid grid-cols-2">
+        <section class="bg-stone-900 rounded-3xl	 w-3/4 p-8">
+            <div>
+                <h1 class="text-3xl mb-4 text-white">Please Diposit</h1>
+                <input class="block mb-4 border-2 w-3/4" id="input-amount" type="text" placeholder="$ amount you want to deposit
+                ">
+            </div>
+            <button id="button" class="bg-red-500 p-4 px-6 rounded-md text-white font-semibold" >Diposit</button>
+        </section>
 
 
+        <!-- Please Withdraw section -->
+        <section class="rounded-3xl bg-red-900 w-3/4 p-8">
+            <div>
+                <h1 class="text-3xl mb-4 text-stone-200">Please Withdraw</h1>
+                <input class=" block mb-4 border-2 w-3/4" id="input-withdraw" type="text" placeholder="$ amount you want to Withdraw
+                ">
+            </div>
+            <button id="button-withdraw" class="bg-stone-500  p-4 px-6 text-white rounded-md font-semibold" >Withdraw</button>
+        </section>
+        <p id="name">Programming Hero</p>
+
+        <button id="button">Make Background Red</button>
+        <script>
+
+document.getElementById('button').addEventListener('onclick', function () {
+   document.body.style.background = 'red';
+  });
+  
+        </script>
+    </main>
     <script src="realbank.js"></script>
 </body>
 </html>
